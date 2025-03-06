@@ -1,0 +1,23 @@
+; Functions to report the movement of the CLAW and BEARS.
+
+(DEFUN MOVETO (X Y Z)
+	(PRINC "~MOVING CLAW TO ")
+	(PRINC (LIST X Y Z))
+	(PRINC "~")
+	(TERPRI))
+
+(DEFUN GRASP (X)
+	(PRINC "~GRASPING BEAR ")
+	(PRINC X)
+	(PRINC "~")
+	(TERPRI))
+
+(DEFUN UNGRASP NIL
+	(PRINC "~LETTING GO~")
+	(TERPRI))
+
+(DEFUN BLINK (X)
+	(PRINC "~CHOOSING BEAR ")
+	(PRINC X)
+	(PRINC "~")
+	(TERPRI))
